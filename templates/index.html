@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI 번견</title>
+
+    <!-- 커스텀 CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+
+    <!-- 배경 동영상 -->
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="{{ url_for('static', filename='videos/background.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- 메인 컨텐츠 -->
+    <div class="content">
+        <h1>실시간 비디오 스트리밍</h1>
+        <p>24시간 운영되는 무인점포, 하지만 보안은 걱정되시나요?<br>
+            저희 AI 번견은 실시간 CCTV 모니터링 시스템으로 이상 상황을 감지하고,
+            <br>보다 안전한 운영을 지원합니다.<br><br>
+            이제, 무인점포도 안심하고 관리하세요.</p>
+        <a href="{{ url_for('login_page') }}" class="btn btn-primary">바로 시작하기</a>
+    </div>
+
+    <!-- 커스텀 JS -->
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>

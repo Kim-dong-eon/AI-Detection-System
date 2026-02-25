@@ -1,0 +1,41 @@
+.video-container {
+    margin-bottom: 20px;
+}
+
+.risk-danger {
+    border-left: 5px solid #dc3545;
+}
+
+.risk-warning {
+    border-left: 5px solid #ffc107;
+}
+
+.risk-safe {
+    border-left: 5px solid #198754;
+}
+
+.video-info {
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+.risk-badge {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+.risk-badge.danger {
+    background-color: #dc3545;
+}
+
+.risk-badge.warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+.risk-badge.safe {
+    background-color: #198754;
+} 

@@ -1,0 +1,199 @@
+/* 기본 레이아웃 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  /* 내비게이션 */
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* 부트스트랩 navbar 커스텀 */
+  .navbar {
+    background-color: #1a2b4c;
+  }
+  
+  .navbar a {
+    color: white;
+  }
+  
+  /* 대시보드 레이아웃 */
+  .dashboard-container {
+    padding: 20px;
+  }
+  
+  /* CCTV 영상 박스 */
+  .cctv-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 이벤트 및 상태 박스 */
+  .event-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 상태 요약 박스 (CCTV/환경안전) */
+  .status-box {
+    background-color: #1c1f2e;
+    color: white;
+    padding: 16px;
+    border-radius: 12px;
+  }
+  
+  /* 환경/안전 단계 배지 */
+  .status-badge {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  
+  /* 원형 상태 아이콘 (위험/주의/안전) */
+  .status-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .status-danger {
+    background-color: #dc3545;
+  }
+  
+  .status-warning {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .status-info {
+    background-color: #0dcaf0;
+  }
+
+  /* 진행 바를 위한 CSS 변수 */
+  :root {
+    --danger-width: 0%;
+    --warning-width: 0%;
+    --safety-width: 0%;
+  }
+
+  .progress-bar.bg-danger {
+    width: var(--danger-width);
+  }
+  
+  .progress-bar.bg-warning {
+    width: var(--warning-width);
+  }
+  
+  .progress-bar.bg-success {
+    width: var(--safety-width);
+  }
+
+  .event-item {
+    background-color: #2a2d3d;
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+  }
+  
+  .event-thumb {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  .status-box .badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+  }
+
+  .event-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .event-link:hover .event-item {
+    background-color: #3a3d4d;
+    cursor: pointer;
+  }
+
+  .event-item .text-muted {
+    color: #ccc !important;
+  }
+
+  /* 녹화 영상 페이지 스타일 */
+  .video-container {
+    margin-bottom: 20px;
+  }
+
+  .risk-danger {
+    border-left: 5px solid #dc3545;
+  }
+
+  .risk-warning {
+    border-left: 5px solid #ffc107;
+  }
+
+  .risk-safe {
+    border-left: 5px solid #198754;
+  }
+
+  .video-info {
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+  }
+
+  .risk-badge {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+  }
+
+  .risk-badge.danger {
+    background-color: #dc3545;
+  }
+
+  .risk-badge.warning {
+    background-color: #ffc107;
+    color: black;
+  }
+
+  .risk-badge.safe {
+    background-color: #198754;
+  }

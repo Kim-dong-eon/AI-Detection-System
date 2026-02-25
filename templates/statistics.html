@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CCTV 통계</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/statistics.css') }}">
+</head>
+
+<body>
+  <h2> CCTV 도난 감지 통계</h2>
+  <canvas id="cctvChart" width="600" height="300"></canvas>
+
+  <h2> 최근 추론 이미지 로그</h2>
+  <div id="visualizations" style="display:flex; flex-wrap:wrap;"></div>
+  <!-- 외부 JavaScript 파일 연결 -->
+  <script src="{{ url_for('static', filename='js/statistics.js') }}"></script>
+</body>
+
+</html>
